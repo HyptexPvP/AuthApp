@@ -21,5 +21,13 @@ app.get('/registerreq', function(req, res) {
         res.send("Invalid!")
     }
 });
-app.listen(1775)
-console.log("154.27.68.233:1775")
+app.get('/deleteaccount', function(req, res) {
+    if(req.query.email && req.query.password && db.get(req.query.email + ":" + req.query.password) == true)
+        db.delete(req.query.email + ":" + req.query.password)
+    	res.send("Valid")
+} else {
+        res.send("Invalid!")
+        }
+});
+app.listen(1853)
+console.log("154.27.68.233:1853")
