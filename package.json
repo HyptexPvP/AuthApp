@@ -1,0 +1,17 @@
+{
+  "name": "LoginApp",
+  "version": "1.0.0",
+  "description": "Made this in 12 seconds, its pretty bad ik ik",
+  "main": "index.js",
+  "keywords": [
+    "login",
+    "register",
+    "authentication"
+  ],
+  "author": "Hyptex",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "quick.db": "*"
+  }
+}
